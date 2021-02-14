@@ -16,6 +16,6 @@ echo -------------------------------------------
 echo Expected: add key3 in section1
 %prg%  /fic:ori.ini
 echo -------------------------------------------
-type ori.ini
+type ori.properties
 echo -------------------------------------------
 pause
