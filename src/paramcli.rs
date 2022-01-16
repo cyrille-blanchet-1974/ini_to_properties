@@ -54,9 +54,7 @@ impl Paramcli {
             println!("Error file {} doesn't exists or unereadable", &fic);
             help(&name);
         };
-        Paramcli {
-            fic,
-        }
+        Paramcli { fic }
     }
 }
 
@@ -69,10 +67,7 @@ fn get_param(arg: &str, switch: String) -> Option<String> {
 }
 
 fn help(name: &str) {
-    println!(
-        "syntax : {} /fic:file",
-        name
-    );
+    println!("syntax : {} /fic:file", name);
     println!("paramerters between [] are optionnals");
     println!("------------------------------------");
     println!("fic: ini file");

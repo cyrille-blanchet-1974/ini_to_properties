@@ -1,11 +1,11 @@
+mod conv;
 mod paramcli;
 mod read;
-mod conv;
 mod write;
 
+use conv::*;
 use paramcli::*;
 use read::*;
-use conv::*;
 use std::sync::mpsc::channel;
 use write::*;
 
